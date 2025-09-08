@@ -7,8 +7,13 @@ export const useValueCallback = (cb, prereqs = []) => (
 );
 
 export const useFormatDate = () => {
-  const { formatDate } = useIntl();
-  return (date) => dateFormatter(formatDate, date);
+  return (date) => {
+    if (!date) return '';
+    const d = new Date(date);
+    return new Intl.DateTimeFormat('vi-VN', {
+      year: 'numeric', month: '2-digit', day: '2-digit'
+    }).format(d);
+  };
 };
 
 export default {

@@ -3,5 +3,8 @@
 @import "~@edx/brand/paragon/overrides";
 
 a.course-card-title {
-  color: $black;
+  color: #d32f2f;
+}
+a.course-card-title:hover {
+  color: #b71c1c;
 }

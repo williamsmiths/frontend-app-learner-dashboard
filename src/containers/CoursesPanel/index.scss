@@ -8,7 +8,7 @@
 }
 
 .course-list-title {
-  font-size: $h2-font-size;
+  font-size: $h3-font-size;
   margin: map-get($spacers, 3) 0;
 }
 
@@ -36,7 +36,7 @@
   }
 
   .course-list-title {
-    font-size: $h3-font-size;
+    font-size: $h4-font-size;
     margin: map-get($spacers, 2) 0;
   }
 }

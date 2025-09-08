@@ -28,7 +28,7 @@ export const CourseCard = ({
               <Card.Header
                 title={<CourseCardTitle cardId={cardId} />}
                 actions={<CourseCardMenu cardId={cardId} />}
-              />
+              >123</Card.Header>
               <Card.Section className="pt-0">
                 <CourseCardDetails cardId={cardId} />
               </Card.Section>

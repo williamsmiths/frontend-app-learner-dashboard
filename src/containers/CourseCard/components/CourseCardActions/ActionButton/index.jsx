@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button } from '@openedx/paragon';
 
 import useIsCollapsed from './hooks';
 
 export const ActionButton = (props) => {
   const isSmall = useIsCollapsed();
   return (
-    <Button
+    <button
       {...props}
       {...isSmall && { size: 'sm' }}
+      variant='light'
+      className="custom-explore-btn border-0"
     />
   );
 };

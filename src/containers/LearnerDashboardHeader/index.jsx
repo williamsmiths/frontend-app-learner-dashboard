@@ -25,7 +25,7 @@ export const LearnerDashboardHeader = () => {
     authenticatedUser,
     exploreCoursesClick,
   });
-
+  
   return (
     <>
       <ConfirmEmailBanner />
@@ -34,7 +34,7 @@ export const LearnerDashboardHeader = () => {
         secondaryMenuItems={learnerHomeHeaderMenu.secondaryMenu}
         userMenuItems={learnerHomeHeaderMenu.userMenu}
       />
-      <MasqueradeBar />
+      {/* <MasqueradeBar /> */}
     </>
   );
 };

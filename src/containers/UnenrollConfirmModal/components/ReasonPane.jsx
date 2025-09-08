@@ -16,8 +16,10 @@ export const ReasonPane = ({
 }) => {
   const { formatMessage } = useIntl();
   const option = (key) => (
-    <Form.Radio key={key} value={key}>
-      {formatMessage(constants.messages[key])}
+    <Form.Radio className="custom-radio my-2" key={key} value={key}>
+      <span>
+        {formatMessage(constants.messages[key])}
+      </span>
     </Form.Radio>
   );
   return (
@@ -29,7 +31,7 @@ export const ReasonPane = ({
         value={reason.selected}
       >
         {constants.order.map(option)}
-        <Form.Radio value={constants.reasonKeys.custom}>
+        <Form.Radio value={constants.reasonKeys.custom} className="mb-4">
           <Form.Control
             {...reason.customOption}
             placeholder={formatMessage(constants.messages.customPlaceholder)}

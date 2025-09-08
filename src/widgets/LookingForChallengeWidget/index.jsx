@@ -5,7 +5,7 @@ import { Card, Hyperlink, Icon } from '@openedx/paragon';
 import { ArrowForward } from '@openedx/paragon/icons';
 
 import { reduxHooks } from 'hooks';
-import moreCoursesSVG from 'assets/more-courses-sidewidget.svg';
+import moreCoursesSVG from 'assets/logo-dtu.png';
 import { baseAppUrl } from 'data/services/lms/urls';
 
 import { findCoursesWidgetClicked } from './track';
@@ -24,6 +24,7 @@ export const LookingForChallengeWidget = () => {
       <Card.ImageCap
         src={moreCoursesSVG}
         srcAlt="course side widget"
+        className="m-3 border-start border-4 border-warning"
       />
       <Card.Body className="m-auto pr-2">
         <h4>
@@ -31,7 +32,7 @@ export const LookingForChallengeWidget = () => {
         </h4>
         <h5>
           <Hyperlink
-            variant="brand"
+            variant="link"
             destination={hyperlinkDestination}
             onClick={findCoursesWidgetClicked(hyperlinkDestination)}
             className="d-flex align-items-center"

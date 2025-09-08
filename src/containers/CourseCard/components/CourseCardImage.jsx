@@ -8,6 +8,7 @@ import track from 'tracking';
 import { reduxHooks } from 'hooks';
 import verifiedRibbon from 'assets/verified-ribbon.png';
 import useActionDisabledState from './hooks';
+import Default_course_image from 'assets/default-course.png';
 
 import messages from '../messages';
 
@@ -27,7 +28,10 @@ export const CourseCardImage = ({ cardId, orientation }) => {
         // w-100 is necessary for images on Safari, otherwise stretches full height of the image
         // https://stackoverflow.com/a/44250830
         className="pgn__card-image-cap w-100 show"
-        src={bannerImgSrc}
+        src={bannerImgSrc || Default_course_image}
+        onError={(e) => {
+          e.target.src = Default_course_image; //Set default image when error occurs
+        }}
         alt={formatMessage(messages.bannerAlt)}
       />
       {

@@ -9,6 +9,10 @@ export const WidgetSidebarSlot = () => (
     id="org.openedx.frontend.learner_dashboard.widget_sidebar.v1"
     idAliases={['widget_sidebar_slot']}
   >
+    <div className="mb-2 text-dark fs-5" style={{ fontWeight: '700' }}>
+          Lựa chọn Dành riêng cho bạn
+    </div>
+
     <LookingForChallengeWidget />
   </PluginSlot>
 );
