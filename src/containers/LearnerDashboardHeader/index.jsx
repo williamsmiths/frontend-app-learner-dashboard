@@ -1,16 +1,17 @@
-import React from 'react';
+import React from "react";
 
-import MasqueradeBar from 'containers/MasqueradeBar';
-import { AppContext } from '@edx/frontend-platform/react';
-import Header from '@edx/frontend-component-header';
-import { reduxHooks } from 'hooks';
-import urls from 'data/services/lms/urls';
+import MasqueradeBar from "containers/MasqueradeBar";
+import { AppContext } from "@edx/frontend-platform/react";
+import CustomHeader from "components/CustomHeader";
+import Header from "@edx/frontend-component-header";
+import { reduxHooks } from "hooks";
+import urls from "data/services/lms/urls";
 
-import ConfirmEmailBanner from './ConfirmEmailBanner';
+import ConfirmEmailBanner from "./ConfirmEmailBanner";
 
-import { useLearnerDashboardHeaderMenu, findCoursesNavClicked } from './hooks';
+import { useLearnerDashboardHeaderMenu, findCoursesNavClicked } from "./hooks";
 
-import './index.scss';
+import "./index.scss";
 
 export const LearnerDashboardHeader = () => {
   const { authenticatedUser } = React.useContext(AppContext);
@@ -25,11 +26,16 @@ export const LearnerDashboardHeader = () => {
     authenticatedUser,
     exploreCoursesClick,
   });
-  
+  console.log("learnerHomeHeaderMenu", learnerHomeHeaderMenu);
   return (
     <>
       <ConfirmEmailBanner />
-      <Header
+      {/* <Header
+        mainMenuItems={learnerHomeHeaderMenu.mainMenu}
+        secondaryMenuItems={learnerHomeHeaderMenu.secondaryMenu}
+        userMenuItems={learnerHomeHeaderMenu.userMenu}
+      /> */}
+      <CustomHeader
         mainMenuItems={learnerHomeHeaderMenu.mainMenu}
         secondaryMenuItems={learnerHomeHeaderMenu.secondaryMenu}
         userMenuItems={learnerHomeHeaderMenu.userMenu}
