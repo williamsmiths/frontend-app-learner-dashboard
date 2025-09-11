@@ -21,13 +21,13 @@ export const CourseCardImage = ({ cardId, orientation }) => {
   const { isVerified } = reduxHooks.useCardEnrollmentData(cardId);
   const { disableCourseTitle } = useActionDisabledState(cardId);
   const handleImageClicked = reduxHooks.useTrackCourseEvent(courseImageClicked, cardId, homeUrl);
-  const wrapperClassName = `pgn__card-wrapper-image-cap d-inline-block overflow-visible ${orientation}`;
+  const wrapperClassName = `pgn__card-wrapper-image-cap1 d-inline-block overflow-visible ${orientation}`;
   const image = (
     <>
       <img
         // w-100 is necessary for images on Safari, otherwise stretches full height of the image
         // https://stackoverflow.com/a/44250830
-        className="pgn__card-image-cap w-100 show"
+        className="pgn__card-image-cap w-100 show h-100 rounded-0"
         src={bannerImgSrc || Default_course_image}
         onError={(e) => {
           e.target.src = Default_course_image; //Set default image when error occurs
