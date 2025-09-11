@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-import { reduxHooks } from 'hooks';
-import { RequestKeys } from 'data/constants/requests';
-import SelectSessionModal from 'containers/SelectSessionModal';
-import CoursesPanel from 'containers/CoursesPanel';
-import DashboardModalSlot from 'plugin-slots/DashboardModalSlot';
+import { reduxHooks } from "hooks";
+import { RequestKeys } from "data/constants/requests";
+import SelectSessionModal from "containers/SelectSessionModal";
+import CoursesPanel from "containers/CoursesPanel";
+import DashboardModalSlot from "plugin-slots/DashboardModalSlot";
 
-import LoadingView from './LoadingView';
-import DashboardLayout from './DashboardLayout';
-import hooks from './hooks';
-import './index.scss';
+import LoadingView from "./LoadingView";
+import DashboardLayout from "./DashboardLayout";
+import hooks from "./hooks";
+import "./index.scss";
 
 export const Dashboard = () => {
   hooks.useInitializeDashboard();
@@ -24,17 +24,17 @@ export const Dashboard = () => {
       {!initIsPending && (
         <>
           <DashboardModalSlot />
-          {(hasCourses && showSelectSessionModal) && <SelectSessionModal />}
+          {hasCourses && showSelectSessionModal && <SelectSessionModal />}
         </>
       )}
       <div id="dashboard-content" data-testid="dashboard-content">
-        {initIsPending
-          ? (<LoadingView />)
-          : (
-            <DashboardLayout>
-              <CoursesPanel />
-            </DashboardLayout>
-          )}
+        {initIsPending ? (
+          <LoadingView />
+        ) : (
+          <DashboardLayout>
+            <CoursesPanel />
+          </DashboardLayout>
+        )}
       </div>
     </div>
   );

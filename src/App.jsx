@@ -74,7 +74,7 @@ export const App = () => {
       <div>
         <AppWrapper>
           <LearnerDashboardHeader />
-          <main id="main">
+          <main id="main" style={{ minHeight: "80vh", maxWidth: "1600px", margin: "20px auto" }}>
             {hasNetworkFailure ? (
               <Alert variant="danger">
                 <ErrorPage message={formatMessage(messages.errorMessage, { supportEmail })} />
