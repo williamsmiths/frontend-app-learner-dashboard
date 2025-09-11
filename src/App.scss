@@ -1,5 +1,4 @@
 // frontend-app-*/src/index.scss
-$primary: #d32f2f;
 $primary-red: #d32f2f;
 $primary-red-dark: #b71c1c;
 $primary-red-light: #ffcdd2;
@@ -77,6 +76,23 @@ $input-focus-box-shadow: $input-box-shadow; // hack to get upgrade to paragon 4.
   background-color: $primary-red-dark !important;
 }
 
+.custom-confirm-btn {
+  background-color: $primary-red !important;
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.custom-confirm-btn:hover {
+  background-color: $primary-red-dark !important;
+}
+
 .custom-dropdown-toggle {
   color: $primary-red !important;
   border: none !important;
@@ -99,13 +115,19 @@ $input-focus-box-shadow: $input-box-shadow; // hack to get upgrade to paragon 4.
   }
 }
 
-/* file: src/styles/radio-overrides.scss */
 
 .custom-radio {
+  outline: none !important;
   span {
     font-size: 1rem;
     color: #333;
   }
+}
+.custom-radio .pgn__form-radio-input:checked {
+  outline-color: $primary-red-dark !important;
+  background-color: $primary-red !important;
+  border-color: $primary-red-dark !important;
+  background-image: none !important;
 }
 
 

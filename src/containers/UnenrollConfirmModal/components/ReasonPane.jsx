@@ -42,7 +42,7 @@ export const ReasonPane = ({
         <Button variant="tertiary" onClick={reason.handleSkip}>
           {formatMessage(messages.reasonSkip)}
         </Button>
-        <Button disabled={!reason.hasReason} onClick={reason.handleSubmit}>
+        <Button disabled={!reason.hasReason} onClick={reason.handleSubmit}  className='custom-confirm-btn' variant='light'>
           {formatMessage(messages.reasonSubmit)}
         </Button>
       </ActionRow>

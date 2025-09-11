@@ -21,7 +21,7 @@ export const ConfirmPane = ({
         <Button variant="tertiary" onClick={handleClose}>
           {formatMessage(messages.confirmCancel)}
         </Button>
-        <Button onClick={handleConfirm}>
+        <Button variant='light' onClick={handleConfirm} className='custom-confirm-btn'>
           {formatMessage(messages.confirmUnenroll)}
         </Button>
       </ActionRow>

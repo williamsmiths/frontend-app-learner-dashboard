@@ -22,7 +22,7 @@ export const FinishedPane = ({
         {formatMessage(messages.finishText)}
       </p>
       <ActionRow>
-        <Button onClick={handleClose}>{formatMessage(messages.finishReturn)}</Button>
+        <Button className='custom-confirm-btn' onClick={handleClose}>{formatMessage(messages.finishReturn)}</Button>
       </ActionRow>
     </>
   );
