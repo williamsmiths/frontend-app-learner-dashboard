@@ -38,7 +38,7 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
 
   @media (max-width: 992px) {
@@ -120,14 +120,26 @@
 .footer-links,
 .contact-info-ft {
   h3 {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #b71c1c;
-    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 20px 0;
+    text-align: start;
+    position: relative;
 
-    @media (max-width: 768px) {
-      text-align: center;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 3px;
+      background: linear-gradient(90deg, #d32f2f, #b71c1c);
+      border-radius: 2px;
+
+      left: 0;
+      transform: none;
     }
   }
 
@@ -135,6 +147,9 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
 
     li {
       margin-bottom: 12px;

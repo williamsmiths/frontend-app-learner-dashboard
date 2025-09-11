@@ -6,6 +6,8 @@ import "./index.scss";
 
 const CustomFooter = ({ links, contactInfo }) => {
   const config = getConfig();
+  const logoUrl = config.LOGO_URL;
+
   // Default links if not provided
   const defaultLinks = [
     { href: "/about", text: "About Us" },
@@ -45,7 +47,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                   className="university-logo"
                   aria-label="Duy Tan University"
                 >
-                  <img src="/static/indigo/images/logo.png" alt="Duy Tan University" width="160" />
+                  <img src={logoUrl} alt="Duy Tan University" width="160" />
                 </a>
                 <a
                   href="https://scs.duytan.edu.vn/"
@@ -54,7 +56,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                   className="cvs-logo ml-3"
                   aria-label="SCS Duy Tan University"
                 >
-                  <img src="/static/indigo/images/logo_scs.png" alt="SCS Duy Tan University" width="100" />
+                  <img src="/logo_scs.png" alt="SCS Duy Tan University" width="100" />
                 </a>
                 <a
                   href="https://cvs.duytan.edu.vn/"
@@ -63,7 +65,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                   className="cvs-logo ml-3"
                   aria-label="CVS Duy Tan University"
                 >
-                  <img src="/static/indigo/images/cvs.png" alt="CVS Duy Tan University" width="100" />
+                  <img src="/cvs.png" alt="CVS Duy Tan University" width="100" />
                 </a>
               </div>
               <p className="university-description" style={{ textAlign: "justify", overflowWrap: "break-word" }}>
