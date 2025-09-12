@@ -8,7 +8,7 @@ import track from 'tracking';
 import { reduxHooks } from 'hooks';
 import verifiedRibbon from 'assets/verified-ribbon.png';
 import useActionDisabledState from './hooks';
-import Default_course_image from 'assets/default-course.png';
+import Default_course_image from 'assets/no_course_image.png';
 
 import messages from '../messages';
 
