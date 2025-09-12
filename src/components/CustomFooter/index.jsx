@@ -7,7 +7,9 @@ import "./index.scss";
 const CustomFooter = ({ links, contactInfo }) => {
   const config = getConfig();
   const logoUrl = config.LOGO_URL;
-
+  const baseUrl = config.LMS_BASE_URL;
+  const cvsLogo = `${baseUrl}/static/indigo/images/cvs.png`;
+  const scsLogo = `${baseUrl}/static/indigo/images/logo_scs.png`;
   // Default links if not provided
   const defaultLinks = [
     { href: "/about", text: "About Us" },
@@ -57,7 +59,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                   className="cvs-logo ml-3"
                   aria-label="SCS Duy Tan University"
                 >
-                  <img src="/logo_scs.png" alt="SCS Duy Tan University" width="45" />
+                  <img src={scsLogo} alt="SCS Duy Tan University" width="45" />
                 </a>
                 <a
                   href="https://cvs.duytan.edu.vn/"
@@ -66,7 +68,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                   className="cvs-logo ml-3"
                   aria-label="CVS Duy Tan University"
                 >
-                  <img src="/cvs.png" alt="CVS Duy Tan University" width="45" />
+                  <img src={cvsLogo} alt="CVS Duy Tan University" width="45" />
                 </a>
               </div>
 
