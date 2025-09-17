@@ -72,7 +72,7 @@ const CustomFooter = ({ links, contactInfo }) => {
                 </a>
               </div>
 
-              <span className="copyright-site" style={{ textAlign: "center", fontSize: "15px" }}>
+              <span className="copyright-site" style={{ textAlign: "start", fontSize: "15px" }}>
                 © {currentYear} Duy Tan University. All Rights Reserved.
               </span>
             </div>
