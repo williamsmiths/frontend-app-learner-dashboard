@@ -101,6 +101,14 @@ $gray-100: #F3F4F6;
   }
 }
 
+a.pgn__card-wrapper-image-cap.d-inline-block.overflow-visible.horizontal {
+    max-width: 300px !important;
+    width: 100% !important;
+    img{
+      object-fit: cover !important;
+    }
+}
+
 
 .custom-radio {
   outline: none !important;
