@@ -87,8 +87,8 @@ export const App = () => {
               <Dashboard />
             )}
           </main>
+          <CustomFooter />
         </AppWrapper>
-        <CustomFooter />
       </div>
     </>
   );
