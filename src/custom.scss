@@ -2,9 +2,8 @@
 $primary-red: #d32f2f;
 $primary-red-dark: #b71c1c;
 $primary-red-light: #ffcdd2;
-$primary-blue: #0065FD;
-$gray-100: #F3F4F6;
-
+$primary-blue: #0065fd;
+$gray-100: #f3f4f6;
 
 .text-primary-red {
   color: $primary-red !important;
@@ -38,7 +37,6 @@ $gray-100: #F3F4F6;
   background-color: $primary-blue !important;
 }
 
-
 .custom-explore-btn {
   background-color: $primary-red !important;
   color: #fff !important;
@@ -54,7 +52,6 @@ $gray-100: #F3F4F6;
   &:focus {
     box-shadow: none !important;
     outline: none !important;
-
   }
 }
 
@@ -93,7 +90,7 @@ $gray-100: #F3F4F6;
   color: #fff !important;
 }
 
-.custom-dropdown-item{
+.custom-dropdown-item {
   &:hover,
   &:focus {
     background: $gray-100 !important;
@@ -101,14 +98,13 @@ $gray-100: #F3F4F6;
   }
 }
 
-a.pgn__card-wrapper-image-cap.d-inline-block.overflow-visible.horizontal {
-    max-width: 300px !important;
-    width: 100% !important;
-    img{
-      object-fit: cover !important;
-    }
+.pgn__card-wrapper-image-cap.d-inline-block.overflow-visible.horizontal {
+  max-width: 300px !important;
+  width: 100% !important;
+  img {
+    object-fit: cover !important;
+  }
 }
-
 
 .custom-radio {
   outline: none !important;
