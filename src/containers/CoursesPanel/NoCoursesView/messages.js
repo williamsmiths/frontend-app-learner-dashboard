@@ -3,17 +3,17 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   lookingForChallengePrompt: {
     id: 'Dashboard.NoCoursesView.lookingForChallengePrompt',
-    defaultMessage: 'Bạn đang tìm kiếm thử thách mới?',
+    defaultMessage: 'Looking for a new challenge?',
     description: 'Prompt user for new challenge',
   },
   exploreCoursesPrompt: {
     id: 'Dashboard.NoCoursesView.exploreCoursesPrompt',
-    defaultMessage: 'Khám phá chương trình học đa dạng, phù hợp với định hướng của bạn.',
+    defaultMessage: 'Explore our courses to add them to your dashboard.',
     description: 'Prompt user to explore more courses',
   },
   exploreCoursesButton: {
     id: 'Dashboard.NoCoursesView.exploreCoursesButton',
-    defaultMessage: 'Khám phá ngay',
+    defaultMessage: 'Explore courses',
     description: 'Button to explore more courses',
   },
   bannerAlt: {

@@ -3,12 +3,12 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   lookingForChallengePrompt: {
     id: 'WidgetSidebar.lookingForChallengePrompt',
-    defaultMessage: 'Tìm kiếm một thử thách mới?',
+    defaultMessage: 'Looking for a new challenge?',
     description: 'Prompt user for new challenge',
   },
   findCoursesButton: {
     id: 'WidgetSidebar.findCoursesButton',
-    defaultMessage: 'Xem khóa học {arrow}',
+    defaultMessage: 'Find a course {arrow}',
     description: 'Button to explore more courses',
   },
 });

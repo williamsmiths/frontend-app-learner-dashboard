@@ -10,7 +10,7 @@ export const WidgetSidebarSlot = () => (
     idAliases={['widget_sidebar_slot']}
   >
     <div className="mb-2 text-dark fs-5" style={{ fontWeight: '700' }}>
-          Lựa chọn Dành riêng cho bạn
+          Recommended Courses for You
     </div>
 
     <LookingForChallengeWidget />

@@ -4,32 +4,32 @@ const messages = defineMessages({
   unenroll: {
     id: 'learner-dash.courseCardMenu.unenroll',
     description: 'Course unenroll menu button',
-    defaultMessage: 'Hủy đăng ký',
+    defaultMessage: 'Unenroll',
   },
   dropdownAlt: {
     id: 'learner-dash.courseCardMenu.dropdownAlt',
     description: 'Course action menu alt-text',
-    defaultMessage: 'Menu hành động khóa học',
+    defaultMessage: 'Course actions dropdown',
   },
   emailSettings: {
     id: 'learner-dash.courseCardMenu.emailSettings',
     description: 'Course email settings menu button',
-    defaultMessage: 'Cài đặt email',
+    defaultMessage: 'Email settings',
   },
   shareToFacebook: {
     id: 'learner-dash.courseCardMenu.shareToFacebook',
     description: 'Course Facebook Sharing button',
-    defaultMessage: 'Chia sẻ lên Facebook',
+    defaultMessage: 'Share to Facebook',
   },
   shareToTwitter: {
     id: 'learner-dash.courseCardMenu.shareToTwitter',
     description: 'Course Twitter Sharing button',
-    defaultMessage: 'Chia sẻ lên Twitter',
+    defaultMessage: 'Share to Twitter',
   },
   shareQuote: {
     id: 'learner-dash.courseCardMenu.shareQuote',
     description: 'Social sharing quote',
-    defaultMessage: 'Tôi đang học {courseName} trực tuyến với {socialBrand}. Hãy cùng thử nhé!',
+    defaultMessage: 'I\'m taking {courseName} online with {socialBrand}.  Check it out!',
   },
 });
 

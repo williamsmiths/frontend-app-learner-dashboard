@@ -4,22 +4,22 @@ const messages = defineMessages({
   beginCourse: {
     id: 'learner-dash.courseCard.actions.beginCourse',
     description: 'Course card begin-course button text',
-    defaultMessage: 'Bắt đầu học',
+    defaultMessage: 'Begin Course',
   },
   resume: {
     id: 'learner-dash.courseCard.actions.resume',
     description: 'Course card resume button text',
-    defaultMessage: 'Tiếp tục',
+    defaultMessage: 'Resume',
   },
   viewCourse: {
     id: 'learner-dash.courseCard.actions.viewCourse',
     description: 'Course card view-course button text',
-    defaultMessage: 'Xem khóa học',
+    defaultMessage: 'View Course',
   },
   selectSession: {
     id: 'learner-dash.courseCard.actions.selectSession',
     description: 'Course card select-session button text',
-    defaultMessage: 'Chọn session',
+    defaultMessage: 'Select Session',
   },
 });
 
