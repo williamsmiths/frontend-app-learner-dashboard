@@ -1,0 +1,10 @@
+@import "~@edx/brand/paragon/variables";
+@import "~@openedx/paragon/scss/core/core";
+@import "~@edx/brand/paragon/overrides";
+
+a.course-card-title {
+  color: #d32f2f;
+}
+a.course-card-title:hover {
+  color: #b71c1c;
+}

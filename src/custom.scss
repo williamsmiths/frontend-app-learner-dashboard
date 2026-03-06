@@ -1,0 +1,121 @@
+// frontend-app-*/src/index.scss
+$primary-red: #d32f2f;
+$primary-red-dark: #b71c1c;
+$primary-red-light: #ffcdd2;
+$primary-blue: #0065fd;
+$gray-100: #f3f4f6;
+
+.text-primary-red {
+  color: $primary-red !important;
+}
+
+.text-primary-red-dark {
+  color: $primary-red-dark !important;
+}
+
+.text-primary-red-light {
+  color: $primary-red-light !important;
+}
+
+.text-primary-blue {
+  color: $primary-blue !important;
+}
+
+.bg-primary-red {
+  background-color: $primary-red !important;
+}
+
+.bg-primary-red-dark {
+  background-color: $primary-red-dark !important;
+}
+
+.bg-primary-red-light {
+  background-color: $primary-red-light !important;
+}
+
+.bg-primary-blue {
+  background-color: $primary-blue !important;
+}
+
+.custom-explore-btn {
+  background-color: $primary-red !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  padding: 8px 24px !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.custom-explore-btn:hover {
+  background-color: $primary-red-dark !important;
+}
+
+.custom-confirm-btn {
+  background-color: $primary-red !important;
+  color: #fff !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  text-decoration: none !important;
+  &:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+}
+
+.custom-confirm-btn:hover {
+  background-color: $primary-red-dark !important;
+}
+
+.custom-dropdown-toggle {
+  color: $primary-red !important;
+  border: none !important;
+  outline: none !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.custom-dropdown-toggle:hover,
+.custom-dropdown-toggle:focus {
+  background: $primary-red !important;
+  color: #fff !important;
+}
+
+.custom-dropdown-item {
+  &:hover,
+  &:focus {
+    background: $gray-100 !important;
+    color: $primary-red !important;
+  }
+}
+
+.pgn__card-wrapper-image-cap.d-inline-block.overflow-visible.horizontal {
+  max-width: 300px !important;
+  width: 100% !important;
+  img {
+    object-fit: cover !important;
+  }
+}
+
+.custom-radio {
+  outline: none !important;
+  span {
+    font-size: 1rem;
+    color: #333;
+  }
+}
+.custom-radio .pgn__form-radio-input:checked {
+  outline-color: $primary-red-dark !important;
+  background-color: $primary-red !important;
+  border-color: $primary-red-dark !important;
+  background-image: none !important;
+}
