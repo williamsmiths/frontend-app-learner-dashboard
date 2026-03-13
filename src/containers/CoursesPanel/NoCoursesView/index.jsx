@@ -17,7 +17,7 @@ export const NoCoursesView = () => {
     <div
       id="no-courses-content-view"
       className="d-flex align-items-center justify-content-center mb-4.5"
-      style={{ backgroundColor: "#FDF8EE" }}
+      style={{ backgroundColor: "#eef3fdff" }}
     >
       <Image className="w-50" src={emptyCourseSVG} alt={formatMessage(messages.bannerAlt)} />
       <h1>

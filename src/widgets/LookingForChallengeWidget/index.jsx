@@ -5,7 +5,7 @@ import { Card, Hyperlink, Icon } from "@openedx/paragon";
 import { ArrowForward } from "@openedx/paragon/icons";
 
 import { reduxHooks } from "hooks";
-import moreCoursesSVG from "assets/logo-dtu.png";
+import moreCoursesSVG from "assets/logo-huit.png";
 import { baseAppUrl } from "data/services/lms/urls";
 
 import { findCoursesWidgetClicked } from "./track";
@@ -26,8 +26,8 @@ export const LookingForChallengeWidget = () => {
         srcAlt="course side widget"
         className="m-3 border-start border-4 border-warning"
       /> */}
-      <div className="m-3 border-start border-4 border-warning">
-        <img src={moreCoursesSVG} />
+      <div className="m-3 border-start border-4 border-warning" style={{ maxWidth: "100px" }}>
+        <img src={moreCoursesSVG} className="img-fluid" alt="More Courses" />
       </div>
       <Card.Body className="m-auto pr-2">
         <h4>{formatMessage(messages.lookingForChallengePrompt)}</h4>

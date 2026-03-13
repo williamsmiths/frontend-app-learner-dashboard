@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { getConfig } from "@edx/frontend-platform";
+import logoHUIT from "assets/logo-ct.png";
 
 import "./index.scss";
 
@@ -30,7 +31,6 @@ const CustomFooter = ({ links, contactInfo }) => {
     websiteHref: "http://tuyensinh.duytan.edu.vn",
   };
 
-  const footerLinks = links || defaultLinks;
   const contact = { ...defaultContactInfo, ...contactInfo };
   const currentYear = new Date().getFullYear();
 
@@ -38,44 +38,23 @@ const CustomFooter = ({ links, contactInfo }) => {
     <div className="wrapper wrapper-footer">
       <footer id="footer" className="tutor-container">
         <div className="footer-content">
-          <div className="footer-grid">
+          <div >
             {/* University Branding Section */}
-            <div className="university-info">
-              <div className="d-flex justify-content-start align-items-center mb-2">
-                {/* <span style={{ textAlign: "center", fontSize: "13px" }}>Powered by</span> */}
-                <a
-                  href="https://duytan.edu.vn/"
-                  rel="noopener"
-                  target="_blank"
-                  className="university-logo "
-                  aria-label="Duy Tan University"
-                >
-                  <img src={logoUrl} alt="Duy Tan University" width="80" />
-                </a>
-                <a
-                  href="https://scs.duytan.edu.vn/"
-                  rel="noopener"
-                  target="_blank"
-                  className="cvs-logo ml-3"
-                  aria-label="SCS Duy Tan University"
-                >
-                  <img src={scsLogo} alt="SCS Duy Tan University" width="45" />
-                </a>
-                <a
-                  href="https://cvs.duytan.edu.vn/"
-                  rel="noopener"
-                  target="_blank"
-                  className="cvs-logo ml-3"
-                  aria-label="CVS Duy Tan University"
-                >
-                  <img src={cvsLogo} alt="CVS Duy Tan University" width="45" />
-                </a>
-              </div>
+            <div className="d-flex justify-content-between align-items-center mb-2 w-full">
+              <a
+                href="https://huit.edu.vn/"
+                rel="noopener"
+                target="_blank"
+                aria-label="TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM"
+              >
+                <img src={logoHUIT} alt="TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM" width="300" />
+              </a>
 
               <span className="copyright-site" style={{ textAlign: "start", fontSize: "15px" }}>
-                © {currentYear} Duy Tan University. All Rights Reserved.
+                © {currentYear} TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM. All Rights Reserved.
               </span>
             </div>
+
           </div>
         </div>
       </footer>
