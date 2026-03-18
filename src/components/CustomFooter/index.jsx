@@ -10,7 +10,7 @@ const CustomFooter = () => {
 
   return (
     <footer className="custom-footer">
-      <div className="container-xl">
+      <div className="container">
         <div className="footer-top-grid">
 
           {/* Cột 1: Branding & Giới thiệu */}
