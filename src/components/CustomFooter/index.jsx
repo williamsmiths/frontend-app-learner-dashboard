@@ -1,87 +1,64 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { getConfig } from "@edx/frontend-platform";
 import logoHUIT from "assets/logo-ct.png";
 
+
 import "./index.scss";
 
-const CustomFooter = ({ links, contactInfo }) => {
-  const config = getConfig();
-  const logoUrl = config.LOGO_URL;
-  const baseUrl = config.LMS_BASE_URL;
-  const cvsLogo = `${baseUrl}/static/indigo/images/cvs.png`;
-  const scsLogo = `${baseUrl}/static/indigo/images/logo_scs.png`;
-  // Default links if not provided
-  const defaultLinks = [
-    { href: "/about", text: "About Us" },
-    { href: "/blog", text: "Blog" },
-    { href: "/donate", text: "Donate" },
-    { href: "/tos", text: "Terms of Service" },
-    { href: "/privacy", text: "Privacy Policy" },
-    { href: "/help", text: "Help" },
-    { href: "/contact", text: "Contact Us" },
-  ];
-
-  // Default contact info if not provided
-  const defaultContactInfo = {
-    address: "254 Nguyễn Văn Linh, P. Thanh Khê, Tp. Đà Nẵng, Việt Nam",
-    phone: "(+84) 236.3650403",
-    phoneHref: "tel:+842363650403",
-    website: "tuyensinh.duytan.edu.vn",
-    websiteHref: "http://tuyensinh.duytan.edu.vn",
-  };
-
-  const contact = { ...defaultContactInfo, ...contactInfo };
+const CustomFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <div className="wrapper wrapper-footer">
-      <footer id="footer" className="tutor-container">
-        <div className="footer-content">
-          <div >
-            {/* University Branding Section */}
-            <div className="d-flex justify-content-between align-items-center mb-2 w-full">
-              <a
-                href="https://huit.edu.vn/"
-                rel="noopener"
-                target="_blank"
-                aria-label="TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM"
-              >
-                <img src={logoHUIT} alt="TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM" width="300" />
-              </a>
+    <footer className="custom-footer">
+      <div className="container-xl">
+        <div className="footer-top-grid">
 
-              <span className="copyright-site" style={{ textAlign: "start", fontSize: "15px" }}>
-                © {currentYear} TRƯỜNG ĐẠI HỌC CÔNG THƯƠNG TP.HCM. All Rights Reserved.
-              </span>
+          {/* Cột 1: Branding & Giới thiệu */}
+          <div className="footer-col branding-col">
+            <div className="logo-wrapper">
+              <img src={logoHUIT} alt="HUIT Logo" className="footer-logo" />
+            </div>
+            <p className="footer-intro-text">
+              Trường Đại học Công Thương TP.HCM – HUIT định hướng ứng dụng,
+              tiên phong trong đào tạo nguồn nhân lực chất lượng cao, mang đến
+              môi trường học tập hiện đại, hệ thống phòng thực hành – thí nghiệm
+              chuẩn công nghiệp, cùng nhiều cơ hội thực tập, trải nghiệm doanh nghiệp
+              và hội nhập quốc tế.
+            </p>
+          </div>
+
+          {/* Cột 2: Trợ Giúp */}
+          <div className="footer-col links-col">
+            <h4 className="footer-title">Trợ Giúp</h4>
+            <ul className="footer-links">
+              <li><a href="#">Liên Hệ</a></li>
+              <li><a href="#">Tin Tức</a></li>
+              <li><a href="#">Câu Hỏi Thường Gặp</a></li>
+            </ul>
+          </div>
+
+          <div className="footer-col info-col">
+            <h4 className="footer-title">Thông Tin</h4>
+            <div className="contact-details">
+              <p><strong>Địa chỉ :</strong> 140 Lê Trọng Tấn, P. Tây Thạnh, TP.HCM</p>
+              <p><strong>Điện thoại :</strong> 028 6270 6275 - 096 205 1080</p>
+              <p><strong>Email :</strong> tuyensinh@huit.edu.vn</p>
             </div>
 
           </div>
         </div>
-      </footer>
-    </div>
+
+        <div className="footer-bottom">
+          <p>
+            Copyright © {currentYear} - Truong Dai Hoc Cong Thuong Tp. Ho Chi Minh - huit.edu.vn
+          </p>
+          <button className="scroll-top-btn" onClick={() => window.scrollTo(0, 0)}>
+            ↑
+          </button>
+        </div>
+      </div>
+    </footer>
   );
-};
-
-CustomFooter.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-      external: PropTypes.bool,
-    })
-  ),
-  contactInfo: PropTypes.shape({
-    address: PropTypes.string,
-    phone: PropTypes.string,
-    phoneHref: PropTypes.string,
-    website: PropTypes.string,
-    websiteHref: PropTypes.string,
-  }),
-};
-
-CustomFooter.defaultProps = {
-  links: null,
-  contactInfo: null,
 };
 
 export default CustomFooter;
